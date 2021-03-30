@@ -132,6 +132,7 @@ def update_payment_intent(id):
     except Exception as e:
         return jsonify(e), 403
 
+"""
 @app.route('/payment_intents/<string:id>/update_currency', methods=['POST'])
 def update_payment_intent(id):
     data = json.loads(request.data)
@@ -148,6 +149,7 @@ def update_payment_intent(id):
     except Exception as e:
         return jsonify(e), 403
 
+"""
 
 @app.route('/webhook', methods=['POST'])
 def webhook_received():
